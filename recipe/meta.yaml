@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-mongo" %}
-{% set version = "2.3.1" %}
+{% set version = "2.3.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-mongo-{{ version }}.tar.gz
-  sha256: bf05db8c4a55b158a7b9a19001f8e7bb08745713ea1e85ac9c439751613fa1c9
+  sha256: 578081215739bbfc4c6b5d197a4c8a2a1e1bfefa0f2d484b7cf5de7cef9850e8
 
 build:
   number: 0
