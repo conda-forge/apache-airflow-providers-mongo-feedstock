@@ -1,7 +1,6 @@
 {% set name = "apache-airflow-providers-mongo" %}
 {% set version = "2.3.3" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,9 +10,9 @@ source:
   sha256: 23432b16e4aee180e8756d53016dd04701012bb3d3e47daf253e8aaf7a32f874
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -37,9 +36,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for MongoDB for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-mongo package
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-mongo/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
