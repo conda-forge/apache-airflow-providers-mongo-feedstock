@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-mongo" %}
-{% set version = "2.3.3" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-mongo-{{ version }}.tar.gz
-  sha256: 23432b16e4aee180e8756d53016dd04701012bb3d3e47daf253e8aaf7a32f874
+  sha256: 2677e604f20a08e36c4ca0d0a2f8f7517fd6b99508e03fcf2a971d25b2c0ae37
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - apache-airflow >=2.1.0
+    - apache-airflow >=2.2.0
     - dnspython >=1.13.0
     - pymongo >=3.6.0,<4.0.0
 
@@ -38,7 +38,9 @@ about:
   home: https://airflow.apache.org/
   summary: Provider for Apache Airflow. Implements apache-airflow-providers-mongo package
   license: Apache-2.0
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-mongo/stable/index.html
   dev_url: https://github.com/apache/airflow/
