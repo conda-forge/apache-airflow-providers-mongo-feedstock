@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-mongo" %}
-{% set version = "4.1.2" %}
+{% set version = "4.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_mongo-{{ version }}.tar.gz
-  sha256: 29b8cac074e5895563b2a81c88306860e5f2285b92b609b00367114e5d9b87ee
+  sha256: 4e35bd05bf6cec02bdc0059ec78bf048a5d9392614fc53d879ca82244ca025d1
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - apache-airflow >=2.7.0
+    - apache-airflow >=2.8.0
     - dnspython >=1.13.0
     - pymongo >=4.0.0
 
