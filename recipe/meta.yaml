@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-mongo" %}
-{% set version = "5.0.2" %}
+{% set version = "5.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_mongo-{{ version }}.tar.gz
-  sha256: 63dfb686122b64581771ff5ce6b0106ba3aa56b60c2553a9451d9c4a2824037f
+  sha256: d3ca30ac12ed5aaca296419b5b80c3446266d0d6de2bd2e9eda35e5aaebc5994
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.11.0
+    - flit-core ==3.12.0
     - pip
   run:
     - python >={{ python_min }},<4.dev0
