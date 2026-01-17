@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-mongo
-  version: "5.3.1"
+  version: "5.3.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_mongo-${{ version }}.tar.gz
-  sha256: eb8fd583e2ab21d3366e0a27c04c0757e095f4d03d1dcaf090b29d4be8c49260
+  sha256: f1aa1aab3dc5e6e56027999cdbfaf2406a470f00b439b392c7e460e84061598c
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
 tests:
   - python:
       imports:
-      - airflow.providers.mongo
+        - airflow.providers.mongo
       pip_check: true
       python_version: ${{ python_min }}.*
 
