@@ -30,7 +30,7 @@ requirements:
 tests:
   - python:
       imports:
-        - airflow.providers.mongo
+      - airflow.providers.mongo
       pip_check: true
       python_version: ${{ python_min }}.*
 
